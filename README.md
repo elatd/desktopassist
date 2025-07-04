@@ -51,6 +51,20 @@ node --version
 npm run setup
 ```
 
+### Intel Mac Build
+
+To build on an Intel-based Mac you need to install native modules for the x86_64 architecture and create an x64 package.
+
+```bash
+# rebuild native dependencies for x86_64
+npm install --arch=x64
+
+# make an Intel build
+npm run make:x64
+```
+
+Ensure that `src/assets/SystemAudioDump` contains an x86_64 or universal binary. If you have the source, compile it for x86_64 or merge with the ARM64 build using `lipo -create`.
+
 ## Highlights
 
 

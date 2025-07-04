@@ -23,7 +23,9 @@ module.exports = {
             "**/*.node",
             "**/*.dylib",
             "node_modules/@img/sharp-darwin-arm64/**",
-            "node_modules/@img/sharp-libvips-darwin-arm64/**"
+            "node_modules/@img/sharp-libvips-darwin-arm64/**",
+            "node_modules/@img/sharp-darwin-x64/**",
+            "node_modules/@img/sharp-libvips-darwin-x64/**"
         ],
         osxSign: {
             identity: process.env.APPLE_SIGNING_IDENTITY,
