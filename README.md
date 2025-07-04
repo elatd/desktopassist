@@ -51,6 +51,17 @@ node --version
 npm run setup
 ```
 
+### Building for Intel Macs
+
+The prebuilt SystemAudioDump helper and native modules are ARM64 only. To run on an Intel-based Mac, rebuild the native pieces and package the app for `x64`:
+
+```bash
+# Build SystemAudioDump for x86_64 or create a universal binary
+# Then install dependencies and make the app
+npm install --arch=x64
+npm run make -- --arch=x64
+```
+
 ## Highlights
 
 
